@@ -11,7 +11,7 @@ blueprint:
       description: Device needs to run the official Home Assistant app.
       selector:
         entity:
-          multiple: true
+        
     address:
       name: "address"
       description: "The address to search."
@@ -21,3 +21,6 @@ blueprint:
         
 mode: restart
 
+sequence:
+  - alias: "get connected devices"
+    
