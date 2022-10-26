@@ -3,6 +3,7 @@ blueprint:
   description: >-
     A script that sends an actionable notification with a confirmation before
     running the specified action. Has a timeout.
+    Based on https://github.com/kvazis/training/blob/master/blueprints/script/homeassistant/confirmable_notification.yaml
   domain: script
   source_url: https://github.com/EmanueleBenedettini/Home-assistant-blueprints/blob/main/Scripts/confirmable_notification_whit_timeout/confirmable_notification_whit_timeout.yaml
   input:
