@@ -11,6 +11,7 @@ blueprint:
       description: Device needs to run the official Home Assistant app.
       selector:
         entity:
+          domain: sensor.bluetooth_connection
         
     address:
       name: "address"
@@ -23,4 +24,6 @@ mode: restart
 
 sequence:
   - alias: "get connected devices"
-    
+  
+  
+ 
