@@ -1,1 +1,7 @@
 blueprint:
+  name: is bluetooth device connected
+  description: >-
+    A script that checks device bluetooth connection to search if a specific device is currently connected 
+  domain: script
+  source_url: https://github.com/EmanueleBenedettini/Home-assistant-blueprints/blob/main/Scripts/confirmable_notification_whit_timeout/confirmable_notification_whit_timeout.yaml
+  input:
