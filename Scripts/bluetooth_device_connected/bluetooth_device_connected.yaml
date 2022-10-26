@@ -12,6 +12,7 @@ blueprint:
       selector:
         entity:
           integration: mobile_app
+          device_class: sensor.bluetooth_connection
         
     address:
       name: "address"
