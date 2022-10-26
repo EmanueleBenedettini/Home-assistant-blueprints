@@ -3,5 +3,21 @@ blueprint:
   description: >-
     A script that checks device bluetooth connection to search if a specific device is currently connected 
   domain: script
-  source_url: https://github.com/EmanueleBenedettini/Home-assistant-blueprints/blob/main/Scripts/confirmable_notification_whit_timeout/confirmable_notification_whit_timeout.yaml
+  source_url: https://github.com/EmanueleBenedettini/Home-assistant-blueprints/blob/main/Scripts/bluetooth_device_connected/bluetooth_device_connected.yaml
+  
   input:
+    entity:
+      name: Device connection to check
+      description: Device needs to run the official Home Assistant app.
+      selector:
+        entity:
+          multiple: true
+    address:
+      name: "address"
+      description: "The address to search."
+      default: "XX:XX:XX:XX:XX:XX"
+      selector:
+        text:
+        
+mode: restart
+
